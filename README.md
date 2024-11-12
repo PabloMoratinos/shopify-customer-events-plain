@@ -16,6 +16,7 @@ purchase (compra)
 view_search_results (ver resultados de búsqueda)
 form_submit (envío de formulario)
 clicks (en general)
+
 Cómo usarlo:
 
 El proyecto contiene tres scripts: gtm-customer-events-storefront, theme y custom-pixel.
