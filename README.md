@@ -22,19 +22,19 @@ El proyecto contiene tres scripts: gtm-customer-events-storefront, theme y custo
 
 gtm-customer-events-storefront
 
-Navega a Tienda Online > Temas > Editar código y encuentra la sección snippets.
-Crea un nuevo snippet y nómbralo gtm-customer-events-storefront (sin comillas).
+Navega a Online Store > Themes > Edit Code y encuentra la sección snippets.
+Crea un nuevo snippet y nómbralo como gtm-customer-events-storefront.
 Pega el contenido del script gtm-customer-events-storefront en el snippet recién creado.
+
 theme
 
 Con el editor de código aún abierto, localiza el archivo theme.liquid.
 Pega el contenido del script theme lo más arriba posible en la sección <head>.
+
 custom-pixel
 
-Navega a Configuración de la tienda > Eventos de Cliente > Agregar píxel personalizado.
+Navega a Settings > Customer Events > Add custom pixel..
 Nombra el píxel (por ejemplo, "GTM pixel") y ábrelo.
-En la sección de Privacidad del Cliente, selecciona:
-No requerido (en la sección de Permisos)
-La recolección de datos no califica como venta de datos (en la sección de Venta de Datos).
-Luego, desplázate hasta la sección de Código y reemplaza el código de marcador de posición de Shopify con el contenido del script custom pixel.
+En la sección de Privacidad del Cliente, selecciona: No requerido (en la sección de Permisos). La recolección de datos no califica como venta de datos (en la sección de Venta de Datos).
+Luego, desplázate hasta la sección de Código y reemplaza el código del placeholder de Shopify con el contenido del script custom-pixel.
 Revisa y ajusta las configuraciones globales en la parte superior del script.
