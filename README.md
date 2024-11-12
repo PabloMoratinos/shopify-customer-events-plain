@@ -1,23 +1,40 @@
-This is a Shopify Customer Events tracking project for both non-ecommerce and ecommerce events. 
-It pushes events' data into the data layer, from where it can be retrieved using a tag manager system (e.g. Google Tag Manager) and sent to different vendors like Google Analytics, Google Ads, and others.
+Este es un proyecto de seguimiento de Eventos de Cliente de Shopify para eventos tanto de ecommerce como no-ecommerce.
+Envía los datos de los eventos a la data layer, desde donde pueden ser recuperados mediante un sistema de gestión de etiquetas (por ejemplo, Google Tag Manager) y enviados a diferentes plataformas como Google Analytics, Google Ads, entre otras.
 
-Using these scripts, you’ll be able to track the following events: page_view, view_item_list, view_item, add_to_cart, view_cart, remove_from_cart, begin_checkout, add_shipping_info, add_payment_info, purchase, view_search_results, form_submit, clicks (in general) 
+Con estos scripts, podrás rastrear los siguientes eventos:
 
-How to use:
+page_view (vista de página)
+view_item_list (vista de lista de productos)
+view_item (vista de producto)
+add_to_cart (añadir al carrito)
+view_cart (ver carrito)
+remove_from_cart (eliminar del carrito)
+begin_checkout (inicio del checkout)
+add_shipping_info (añadir información de envío)
+add_payment_info (añadir información de pago)
+purchase (compra)
+view_search_results (ver resultados de búsqueda)
+form_submit (envío de formulario)
+clicks (en general)
+Cómo usarlo:
 
-It contains three scripts: gtm-customer-events-storefront, theme, and custom-pixel.
+El proyecto contiene tres scripts: gtm-customer-events-storefront, theme y custom-pixel.
 
-1. gtm-customer-events-storefront
-Navigate to Online Store > Themes > Edit Code, and locate the 'snippets' section. Create a new snippet and name it 'gtm-customer-events-storefront' (without quotes). Paste the contents of the 'gtm-customer-events-storefront' script into the newly created snippet.
+gtm-customer-events-storefront
 
-2. theme
-With the code editor still open, locate the theme.liquid file. Paste the contents of the 'theme' script as high in the <head> section as possible.
+Navega a Tienda Online > Temas > Editar código y encuentra la sección snippets.
+Crea un nuevo snippet y nómbralo gtm-customer-events-storefront (sin comillas).
+Pega el contenido del script gtm-customer-events-storefront en el snippet recién creado.
+theme
 
-3. custom-pixel
-Navigate to your store's Settings > Customer Events > Add custom pixel.
-Name the pixel (e.g. 'GTM pixel') and open it.
-In the Customer Privacy section, select:
-- Not required (in the Permission section) 
-- Data collection does not qualify as data sale (in the Data sale section)
-Then, scroll down to the Code section and replace the placeholder code by Shopify with the contents of the 'custom pixel' script.
-Review and adjust the global settings at the top of the script.
+Con el editor de código aún abierto, localiza el archivo theme.liquid.
+Pega el contenido del script theme lo más arriba posible en la sección <head>.
+custom-pixel
+
+Navega a Configuración de la tienda > Eventos de Cliente > Agregar píxel personalizado.
+Nombra el píxel (por ejemplo, "GTM pixel") y ábrelo.
+En la sección de Privacidad del Cliente, selecciona:
+No requerido (en la sección de Permisos)
+La recolección de datos no califica como venta de datos (en la sección de Venta de Datos).
+Luego, desplázate hasta la sección de Código y reemplaza el código de marcador de posición de Shopify con el contenido del script custom pixel.
+Revisa y ajusta las configuraciones globales en la parte superior del script.
